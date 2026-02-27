@@ -36,10 +36,10 @@ jobs:
       - name: Upload artifact linux arm
         uses: actions/upload-artifact@v6
         with:
-          name: timeelapsed-linux-arm64
-          path: bin/linux/arm64/TimeElapsed
+          name: timeelapsed-linux-arm
+          path: bin/linux/arm/TimeElapsed
       - name: Upload artifact linux arm64
         uses: actions/upload-artifact@v6
         with:
-          name: timeelapsed-linux-386
-          path: bin/linux/386/TimeElapsed
+          name: timeelapsed-linux-arm64
+          path: bin/linux/arm64/TimeElapsed
