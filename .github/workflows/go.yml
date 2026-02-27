@@ -16,5 +16,8 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v6
         with:
-          name: result-artifacts
+          name: timeelapsed-windows-386
+          path: bin/windows/386/TimeElapsed.exe
+        with:
+          name: timeelapsed-windows-amd64
           path: bin/windows/amd64/TimeElapsed.exe
