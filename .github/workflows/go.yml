@@ -13,3 +13,8 @@ jobs:
         run: go get .
       - name: Build
         run: bash build.sh
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: result-artifacts
+          path: bin/windows/amd64/TimeElapsed.exe
