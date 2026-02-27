@@ -23,3 +23,23 @@ jobs:
         with:
           name: timeelapsed-windows-amd64
           path: bin/windows/amd64/TimeElapsed.exe
+      - name: Upload artifact linux 386
+        uses: actions/upload-artifact@v6
+        with:
+          name: timeelapsed-linux-386
+          path: bin/linux/386/TimeElapsed
+      - name: Upload artifact linux amd64
+        uses: actions/upload-artifact@v6
+        with:
+          name: timeelapsed-linux-amd64
+          path: bin/linux/amd64/TimeElapsed
+      - name: Upload artifact linux arm
+        uses: actions/upload-artifact@v6
+        with:
+          name: timeelapsed-linux-arm64
+          path: bin/linux/arm64/TimeElapsed
+      - name: Upload artifact linux arm64
+        uses: actions/upload-artifact@v6
+        with:
+          name: timeelapsed-linux-386
+          path: bin/linux/386/TimeElapsed
