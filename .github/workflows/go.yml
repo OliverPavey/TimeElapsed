@@ -13,6 +13,8 @@ jobs:
         run: go get .
       - name: Build
         run: bash build.sh
+      - name: Test
+        run: bash test.sh
       - name: Upload artifact windows 386
         uses: actions/upload-artifact@v6
         with:
