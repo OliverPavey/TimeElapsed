@@ -1,4 +1,4 @@
-name: Go
+name: Build/Test Go Artifacts
 on: [workflow_dispatch]
 jobs:
   build:
